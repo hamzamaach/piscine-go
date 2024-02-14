@@ -1,1 +1,1 @@
-ls -la --ignore=".*"  --ignore="..*" --ignore="." --ignore=".." -t --format=comma
+ls --ignore=".*"  --ignore="..*" --format=single-column | tr '\n' ',' 
