@@ -1,1 +1,1 @@
-find .  -type f -name "*.sh"  | tr -d '.sh' | tr -d '/' | sort -r
+find .  -type f -name "*.sh" |rev|cut -d '/' -f1|rev|cut -d '.' -f1
