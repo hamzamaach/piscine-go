@@ -2,4 +2,4 @@ allRelatives=$(curl -s https://learn.zone01oujda.ma/assets/superhero/all.json | 
 
 formattedRelatives=$(echo $allRelatives | sed 's/"//g')
 
-echo $formattedRelatives
+echo -e $formattedRelatives
