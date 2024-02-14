@@ -1,1 +1,1 @@
-find . -name "*.sh" | tr -d '.sh' | tr -d '/'
+find . -name "*.sh" | rev | tr -d '.sh' | tr -d '/'
