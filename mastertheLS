@@ -1,1 +1,1 @@
-ls --ignore="." --ignore=".." -t --format=comma | sed 's/\(\/\)\(.*\)/\2\1/'
+ls -la --ignore=".*"  --ignore="..*" --ignore="." --ignore=".." -t --format=comma
