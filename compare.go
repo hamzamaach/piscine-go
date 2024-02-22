@@ -8,7 +8,9 @@ func Compare(a, b string) int {
 		minLength = len(a)
 	}
 	for i := 0; i < minLength; i++ {
-		if a[i] < b[i] {
+		if a[i] > b[i] {
+			return 1
+		} else if a[i] < b[i] {
 			return -1
 		}
 	}
