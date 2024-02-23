@@ -8,12 +8,13 @@ import (
 
 func main() {
 	args := os.Args
-
-	for _, char := range args[0] {
-		if char == '-' || char == '/' {
-			continue
+	if len(args) > 0 {
+		for _, char := range args[0] {
+			if char == '.' || char == '/' {
+				continue
+			}
+			z01.PrintRune(char)
 		}
-		z01.PrintRune(char)
+		z01.PrintRune('\n')
 	}
-	z01.PrintRune('\n')
 }
