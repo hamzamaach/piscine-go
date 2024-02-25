@@ -9,6 +9,6 @@ func MakeRange(min, max int) []int {
 		}
 		return result
 	} else {
-		return []int{}
+		return []int(nil)
 	}
 }
