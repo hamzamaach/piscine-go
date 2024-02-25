@@ -3,9 +3,9 @@ package piscine
 func ConcatParams(args []string) string {
 	result := ""
 	for i, word := range args {
-		if i!=len(args)-1{
+		if i != len(args)-1 {
 			result += word + "\n"
-			}else{
+		} else {
 			result += word
 		}
 	}
