@@ -15,7 +15,7 @@ func main() {
 		fmt.Printf("Too many arguments")
 		fmt.Printf("\n")
 	} else {
-		content,_ :=  ioutil.ReadFile(args[0])
+		content, _ := ioutil.ReadFile(args[0])
 		fmt.Println(string(content))
 	}
 }
