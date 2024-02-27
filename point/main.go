@@ -25,7 +25,6 @@ func printString(str string) {
 }
 
 func intToString(num int) string {
-
 	var result [19]byte
 	n := len(result) - 1
 	if num >= 0 {
