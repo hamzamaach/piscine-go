@@ -1,8 +1,8 @@
 package main
 
 import (
-	"os"
 	"github.com/01-edu/z01"
+	"os"
 )
 
 func printStr(s string) {
@@ -13,9 +13,9 @@ func printStr(s string) {
 }
 
 func even(nbr int) int {
-	if nbr % 2 == 0 {
+	if nbr%2 == 0 {
 		return 1
-	}else{
+	} else {
 		return 0
 	}
 }
