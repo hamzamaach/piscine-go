@@ -16,6 +16,6 @@ func main() {
 		fmt.Printf("\n")
 	} else {
 		content, _ := ioutil.ReadFile(args[0])
-		fmt.Println(string(content))
+		fmt.Printf(string(content))
 	}
 }
