@@ -3,29 +3,31 @@ package piscine
 import (
 	"github.com/01-edu/z01"
 )
+func printRune(nb rune) {
+    z01.PrintRune(nb)
+}
 
 func DescendComb() {
-	PrintNumber := func(n int) {
-		if n < 10 {
-			z01.PrintRune('0')
-			z01.PrintRune(rune('0' + n))
-		} else {
-			z01.PrintRune(rune('0' + n/10))
-			z01.PrintRune(rune('0' + n%10))
-		}
-	}
-	for i := 99; i >= 1; i-- {
-		for j := i - 1; j > 0; j-- {
-			PrintNumber(i)
-			z01.PrintRune(' ')
-			PrintNumber(j)
-
-			if i != 1 || j != 0 {
-				z01.PrintRune(',')
-				z01.PrintRune(' ')
-			} else {
-				z01.PrintRune('\n')
-			}
-		}
-	}
+    for a := '9'; a >= '0'; a-- {
+        for b := '9'; b >= '0'; b-- {
+            for c := '9'; c >= '0'; c-- {
+                for d := '9'; d >= '0'; d-- {
+                    if (a > c) || (b > d && a == c) {
+                        printRune(a)
+                        printRune(b)
+                        printRune(' ')
+                        printRune(c)
+                        printRune(d)
+                        if a == '0' && b == '1' && c == '0' && d == '0' {
+                            break
+                        } else {
+                            printRune(',')
+                            printRune(' ')
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
