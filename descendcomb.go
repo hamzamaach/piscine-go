@@ -18,7 +18,9 @@ func DescendComb() {
 		for j := i - 1; j >= 0; j-- {
 			PrintNumber(i)
 			z01.PrintRune(' ')
-			PrintNumber(j)
+			if j != 0 {
+				PrintNumber(j)
+			}
 
 			if i != 1 || j != 0 {
 				z01.PrintRune(',')
