@@ -14,7 +14,6 @@ func DescendComb() {
 			z01.PrintRune(rune('0' + n%10))
 		}
 	}
-
 	for i := 99; i >= 1; i-- {
 		for j := i - 1; j >= 0; j-- {
 			PrintNumber(i)
@@ -30,4 +29,3 @@ func DescendComb() {
 		}
 	}
 }
-
