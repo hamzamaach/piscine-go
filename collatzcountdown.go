@@ -15,5 +15,9 @@ func CollatzCountdown(start int) int {
 			break
 		}
 	}
-	return count
+	if count == 0 {
+		return -1
+	} else {
+		return count
+	}
 }
