@@ -1,14 +1,17 @@
 package piscine
 
 func Unmatch(a []int) int {
-	counts := make(map[int]int)
-	for _, num := range a {
-		counts[num]++
-	}
-	for num, count := range counts {
-		if count%2 != 0 {
-			return num
-		}
-	}
-	return -1
+    n := -1
+    for _, nb := range a {
+        cnt := 0
+        for_, com := range a {
+            if nb == com {
+                cnt++
+            }
+        }
+        if cnt%2 != 0 {
+            return nb
+        }
+    }
+    return n
 }
