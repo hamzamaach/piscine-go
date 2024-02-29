@@ -21,4 +21,3 @@ func Unmatch(a []int) int {
 
 	return result
 }
-
