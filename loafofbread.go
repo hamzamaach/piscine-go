@@ -6,19 +6,16 @@ func LoafOfBread(str string) string {
 	}
 	result := ""
 	wordLength := 0
-	for i, char := range str {
+	for _, char := range str {
 		if char != ' ' {
+			if wordLength == 5 {
+				result += " "
+				wordLength = 0
+				continue
+			}
 			result += string(char)
 			wordLength++
 		}
-
-		if wordLength == 5 {
-			wordLength = 0
-			result += " "
-		}
-		if int(i) == len(str)-1 {
-			result += "\n"
-		}
 	}
-	return result
+	return result + "\n"
 }
