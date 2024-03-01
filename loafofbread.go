@@ -10,7 +10,7 @@ func LoafOfBread(str string) string {
 		if char != ' ' {
 			if wordLength == 5 {
 				result += " "
-				wordLength = 0
+				wordLength = 1
 				continue
 			}
 			result += string(char)
