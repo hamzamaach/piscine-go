@@ -16,7 +16,5 @@ func main() {
 	}
 	if found {
 		fmt.Println("Alert!!!")
-	} else {
-		fmt.Println()
 	}
 }
