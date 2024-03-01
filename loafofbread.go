@@ -4,10 +4,8 @@ func LoafOfBread(str string) string {
 	if len(str) < 5 {
 		return "Invalid Output\n"
 	}
-
 	result := ""
 	wordLength := 0
-
 	for i, char := range str {
 		if char != ' ' {
 			result += string(char)
@@ -22,6 +20,5 @@ func LoafOfBread(str string) string {
 			result += "\n"
 		}
 	}
-
 	return result
 }
