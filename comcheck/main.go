@@ -7,7 +7,6 @@ import (
 
 func main() {
 	args := os.Args[1:]
-
 	found := false
 	for _, arg := range args {
 		if arg == "01" || arg == "galaxy" || arg == "galaxy 01" {
