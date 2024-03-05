@@ -17,9 +17,9 @@ func LoafOfBread(str string) string {
 			result += " "
 			counter = 0
 		}
-		if i == len(str)-1 && len(result) > 0 && result[len(result)-1] == ' ' {
+		if i == len(str)-1 && result[len(result)-1] == ' ' {
 			result = result[:len(result)-1]
 		}
 	}
-	return result + "s\n"
+	return result + "\n"
 }
