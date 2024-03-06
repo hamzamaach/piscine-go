@@ -5,10 +5,10 @@ package piscine
 // 	Next *NodeL
 // }
 
-type List struct {
-	Head *NodeL
-	Tail *NodeL
-}
+// type List struct {
+// 	Head *NodeL
+// 	Tail *NodeL
+// }
 
 func ListLast(l *List) interface{} {
 	var result interface{}
