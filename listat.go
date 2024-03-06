@@ -16,5 +16,4 @@ func ListAt(l *NodeL, pos int) *NodeL {
 		count++
 	}
 	return nil
-
 }
