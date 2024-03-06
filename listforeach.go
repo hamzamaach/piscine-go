@@ -11,7 +11,6 @@ type List struct {
 }
 
 func ListForEach(l *List, f func(*NodeL)) {
-
 	current := l.Head
 	for current != nil {
 		f(current)
